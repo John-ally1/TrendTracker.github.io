@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendPulse - Real-time Trends</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d7e812181.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="pulse-icon"><i class="fas fa-signal"></i></span>
+                    <h1>TrendPulse</h1>
+                </div>
+                <p class="tagline">Real-time trends across the digital landscape</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h2>Today's <span class="highlight">Top Trends</span></h2>
+                <p>Stay updated with what's trending across music, memes, news, social media, and search queries.</p>
+            </div>
+        </section>
+
+        <!-- Music Trends Section -->
+        <section id="music-section" class="trend-section bg-gradient-1">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title">
+                        <i class="fas fa-music"></i>
+                        <h2>Music Trends</h2>
+                    </div>
+                    <div class="last-updated" id="music-last-updated">Updated just now</div>
+                </div>
+                
+                <div class="carousel-container">
+                    <button class="scroll-btn prev" id="music-prev" aria-label="Previous music trend">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="trends-container" id="music-trends">
+                        <!-- Music trends will be loaded here -->
+                        <div class="loading-spinner">
+                            <i class="fas fa-circle-notch fa-spin"></i>
+                        </div>
+                    </div>
+                    
+                    <button class="scroll-btn next" id="music-next" aria-label="Next music trend">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="carousel-indicators" id="music-indicators"></div>
+            </div>
+        </section>
+
+        <!-- Memes Trends Section -->
+        <section id="memes-section" class="trend-section bg-gradient-2">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title">
+                        <i class="fas fa-laugh-squint"></i>
+                        <h2>Meme Trends</h2>
+                    </div>
+                    <div class="last-updated" id="memes-last-updated">Updated just now</div>
+                </div>
+                
+                <div class="carousel-container">
+                    <button class="scroll-btn prev" id="memes-prev" aria-label="Previous meme trend">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="trends-container" id="memes-trends">
+                        <!-- Meme trends will be loaded here -->
+                        <div class="loading-spinner">
+                            <i class="fas fa-circle-notch fa-spin"></i>
+                        </div>
+                    </div>
+                    
+                    <button class="scroll-btn next" id="memes-next" aria-label="Next meme trend">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="carousel-indicators" id="memes-indicators"></div>
+            </div>
+        </section>
+
+        <!-- News Trends Section -->
+        <section id="news-section" class="trend-section bg-gradient-3">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title">
+                        <i class="fas fa-newspaper"></i>
+                        <h2>News Trends</h2>
+                    </div>
+                    <div class="last-updated" id="news-last-updated">Updated just now</div>
+                </div>
+                
+                <div class="carousel-container">
+                    <button class="scroll-btn prev" id="news-prev" aria-label="Previous news trend">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="trends-container" id="news-trends">
+                        <!-- News trends will be loaded here -->
+                        <div class="loading-spinner">
+                            <i class="fas fa-circle-notch fa-spin"></i>
+                        </div>
+                    </div>
+                    
+                    <button class="scroll-btn next" id="news-next" aria-label="Next news trend">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="carousel-indicators" id="news-indicators"></div>
+            </div>
+        </section>
+
+        <!-- Social Media Trends Section -->
+        <section id="social-section" class="trend-section bg-gradient-4">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title">
+                        <i class="fas fa-share-alt"></i>
+                        <h2>Social Media Trends</h2>
+                    </div>
+                    <div class="last-updated" id="social-last-updated">Updated just now</div>
+                </div>
+                
+                <div class="carousel-container">
+                    <button class="scroll-btn prev" id="social-prev" aria-label="Previous social media trend">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="trends-container" id="social-trends">
+                        <!-- Social media trends will be loaded here -->
+                        <div class="loading-spinner">
+                            <i class="fas fa-circle-notch fa-spin"></i>
+                        </div>
+                    </div>
+                    
+                    <button class="scroll-btn next" id="social-next" aria-label="Next social media trend">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="carousel-indicators" id="social-indicators"></div>
+            </div>
+        </section>
+
+        <!-- Search Trends Section -->
+        <section id="search-section" class="trend-section bg-gradient-5">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title">
+                        <i class="fas fa-search"></i>
+                        <h2>Search Trends</h2>
+                    </div>
+                    <div class="last-updated" id="search-last-updated">Updated just now</div>
+                </div>
+                
+                <div class="carousel-container">
+                    <button class="scroll-btn prev" id="search-prev" aria-label="Previous search trend">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="trends-container" id="search-trends">
+                        <!-- Search trends will be loaded here -->
+                        <div class="loading-spinner">
+                            <i class="fas fa-circle-notch fa-spin"></i>
+                        </div>
+                    </div>
+                    
+                    <button class="scroll-btn next" id="search-next" aria-label="Next search trend">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="carousel-indicators" id="search-indicators"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TrendPulse. All rights reserved.</p>
+            <p>Powered by real-time data from various trending APIs.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
